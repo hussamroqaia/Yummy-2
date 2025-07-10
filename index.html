@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+      .btn-book {
+        color: #fff;
+        /* border-radius: 50px; */
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+      }
+      .btn-book:hover {
+        background-color: #a00;
+      }
+      .light-background {
+        background-color: #f2f2f2;
+        --surface-color: #ffffff;
+      }
+      .amatic-sc-regular {
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+        color: #37373f;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container position-relative">
+        <nav class="navbar navbar-expand-lg bg-white">
+          <a class="navbar-brand fw-bold" href="#"
+            >Yummy
+            <span class="text-primary">.</span>
+          </a>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chefs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="#"
+            class="btn btn-book btn-primary border rounded-pill ms-lg-4"
+            >Book a Table</a
+          >
+        </nav>
+      </div>
+    </header>
+    
+    <section id="hero" class="section hero light-background">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex flex-column justify-content-center">
+            <h1 class="amatic-sc-regular">Enjoy Your Healthy <br> Delicious Food</h1>
+            <p>
+              We are team of talented designers making websites with Bootstrap
+            </p>
+            <div>
+              <a href="" class="btn btn-primary">Book a Table</a>
+              <a href="" class="btn  light-background">
+                <i class="bi bi-play-circle"></i>
+                Watch Video</a
+              >
+            </div>
+          </div>
+          <div class="col">
+            <img src="./img/hero-img.png" height="526" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
