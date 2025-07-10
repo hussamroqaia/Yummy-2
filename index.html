@@ -12,7 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./scss/main.css" />
     <style>
       .btn-book {
         color: #fff;
@@ -28,26 +47,101 @@
         --surface-color: #ffffff;
       }
       .amatic-sc-regular {
-        font-family: "Amatic SC", sans-serif;
         font-weight: 700;
         font-size: 64px;
         color: #37373f;
         font-style: normal;
       }
+      .font-amatic {
+        font-family: var(--heading-font);
+      }
+      .font-inter {
+        font-family: var(--nav-font);
+      }
+      .font-roboto {
+        font-family: var(--default-font);
+      }
+      body {
+        font-family: var(--default-font);
+      }
+      .section-title {
+        color: #212529;
+        opacity: 0.6;
+        letter-spacing: 1px;
+        padding-top: 3.75rem;
+      }
+      .section-subtitle {
+        color: #212529;
+        opacity: 0.7;
+
+        padding-top: 3.75rem;
+      }
+      .lorem {
+        color: #212529;
+        opacity: 0.6;
+      }
+      .fs-heading {
+        font-size: 3rem;
+      }
+      .box-a {
+        border: 4px solid #636669;
+      }
+      .pa-icon {
+        font-size: 15px;
+        color: #212529b3;
+      }
+      .margin-30 {
+        margin-bottom: 30px;
+      }
+      .learn-more {
+        border-radius: 50px;
+        background-color: #d53535;
+        border: none;
+        padding: 8px 40px;
+      }
+
+      #why-us {
+        margin-top: 60px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      #stats {
+        background-image: url("./img/stats-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(10, 12, 22, 0.602);
+        background-blend-mode: color;
+        padding: 120px 0;
+      }
+      .menu-img{
+        padding: 0 60px;
+        margin-bottom: 15px;
+      }
+      .plate-name {
+        margin-bottom: 5px;
+
+      }
+      .ingredients {
+        font-size: 16px;
+        color: #21252980;
+        margin-bottom: 5px;
+
+
+      }
     </style>
   </head>
   <body>
-   
     <header id="header" class="header d-flex align-items-center sticky-top">
       <div class="container position-relative">
         <nav class="navbar navbar-expand-lg bg-white">
-          <a class="navbar-brand fw-bold" href="#"
+          <a class="navbar-brand fw-bold text-secondary" href="#"
             >Yummy
             <span class="text-primary">.</span>
           </a>
 
           <div
-            class="collapse navbar-collapse justify-content-center"
+            class="collapse navbar-collapse justify-content-center font-inter"
             id="navbarNav"
           >
             <ul class="navbar-nav mb-2 mb-lg-0">
@@ -98,18 +192,21 @@
         </nav>
       </div>
     </header>
-    
+
     <section id="hero" class="section hero light-background">
       <div class="container">
         <div class="row">
           <div class="col d-flex flex-column justify-content-center">
-            <h1 class="amatic-sc-regular">Enjoy Your Healthy <br> Delicious Food</h1>
+            <h1 class="amatic-sc-regular font-amatic">
+              Enjoy Your Healthy <br />
+              Delicious Food
+            </h1>
             <p>
               We are team of talented designers making websites with Bootstrap
             </p>
             <div>
               <a href="" class="btn btn-primary">Book a Table</a>
-              <a href="" class="btn  light-background">
+              <a href="" class="btn light-background">
                 <i class="bi bi-play-circle"></i>
                 Watch Video</a
               >
@@ -122,7 +219,285 @@
       </div>
     </section>
 
-    
+    <section id="about ">
+      <div class="container text-center">
+        <h2 class="fs-6 fw-normal section-title mt-6">About Us</h2>
+        <p class="font-amatic fs-heading">
+          <span>Learn More</span>
+          <span class="text-primary fw-medium">About Us</span>
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <img src="./img/about.jpg" height="559.5" alt="" />
+            <div class="text-center box-a mt-4" style="padding: 22px">
+              <h3 class="fs-4 fw-bold text-secondary">Book a Table</h3>
+              <p class="text-primary fs-3 fw-medium" style="margin: 0">
+                +1 5589 55488 55
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="ps-5">
+              <p class="fst-italic lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <ul style="list-style: none; padding: 0">
+                <li class="pb-2">
+                  <i class="bi bi-check-circle-fill text-primary"></i>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </li>
+                <li class="pb-2">
+                  <i class="bi bi-check-circle-fill text-primary"></i>
+                  Duis aute irure dolor in reprehenderit in voluptate velit.
+                </li>
+                <li class="pb-2">
+                  <i class="bi bi-check-circle-fill text-primary"></i>
+                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate trideta
+                  storacalaperda mastiro dolore eu fugiat nulla pariatur.
+                </li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident
+              </p>
+              <div>
+                <img src="./img/about-2.jpg" height="358.5" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="section light-background">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div
+              style="padding: 30px"
+              class="bg-primary text-center text-white"
+            >
+              <h3 style="font-size: 34px" class="fw-bold">Why Choose Yummy</h3>
+              <p class="margin-30" style="font-size: 16px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                aute irure dolor in reprehenderit Asperiores dolores sed et.
+                Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
+                optio ad corporis.
+              </p>
+              <button
+                style="font-size: 16px"
+                class="learn-more btn btn-secondary m-6"
+              >
+                Learn More
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="row">
+              <div class="col-4 text-center">
+                <div
+                  class="bg-white"
+                  style="padding: 40px 30px; border: 1px solid #f4f6f7"
+                  class="text-center d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="margin-30">
+                    <i class="bi bi-clipboard-data margin-30"></i>
+                  </div>
+                  <h4 style="color: #37373f" class="margin-30 fs-5">
+                    Corporis voluptates officia eiusmod
+                  </h4>
+                  <p class="pa-icon margin-30">
+                    Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                    laboris nisi ut aliquip
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 text-center">
+                <div
+                  class="bg-white"
+                  style="padding: 40px 30px; border: 1px solid #f4f6f7"
+                  class="text-center d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="margin-30">
+                    <i class="bi bi-gem"></i>
+                  </div>
+                  <h4 style="color: #37373f" class="margin-30 fs-5">
+                    Ullamco laboris ladore lore pan
+                  </h4>
+                  <p class="pa-icon margin-30">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 text-center">
+                <div
+                  class="bg-white"
+                  style="padding: 40px 30px; border: 1px solid #f4f6f7"
+                  class="text-center d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="margin-30">
+                    <i class="bi bi-inboxes"></i>
+                  </div>
+                  <h4 style="color: #37373f" class="margin-30 fs-5">
+                    Labore consequatur incidid dolore
+                  </h4>
+                  <p class="pa-icon margin-30">
+                    Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                    maiores omnis facere
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="text-center">
+              <span style="font-size: 48px" class="fw-bold text-white"
+                >232</span
+              >
+              <p style="font-size: 16px; color: #fff9" class="fw-bold">
+                Clients
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="text-center">
+              <span style="font-size: 48px" class="fw-bold text-white"
+                >521</span
+              >
+              <p style="font-size: 16px; color: #fff9" class="fw-bold">
+                Projects
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="text-center">
+              <span style="font-size: 48px" class="fw-bold text-white"
+                >1453</span
+              >
+              <p style="font-size: 16px; color: #fff9" class="fw-bold">
+                Hours Of Support
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="text-center">
+              <span style="font-size: 48px" class="fw-bold text-white">32</span>
+              <p style="font-size: 16px; color: #fff9" class="fw-bold">
+                Workers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="container text-center">
+        <h2 class="fs-6 fw-normal section-title mt-6">OUR MENU</h2>
+        <p class="font-amatic fs-heading">
+          <span>Check Our</span>
+          <span class="text-primary fw-medium">Yummy Menu</span>
+        </p>
+      </div>
+      <div class="container">
+        <ul class="nav nav-tabs d-flex justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link show active">
+              <h4 class="fs-5">Starters</h4>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">
+              <h4>Breakfast</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <h4>Lunch</h4>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">
+              <h4>Dinner</h4>
+            </a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <h2 class="fs-6 fw-normal section-subtitle mt-6">MENU</h2>
+          <p class="font-amatic fs-heading">
+            <span class="text-primary fw-bold">STARTERS</span>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-4 text-center">
+            <img class="menu-img" src="./img/menu/menu-item-1.png" height="296" alt="">
+            <h4 class="plate-name">Magnam Tiste</h4>
+            <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+            <p class="price fw-bold text-primary fs-4">$5.35</p>
+          </div>
+          <div class="col-4 text-center">
+            <img class="menu-img" src="./img/menu/menu-item-2.png" height="296" alt="">
+            <h4 class="plate-name">Aut Luia</h4>
+            <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+            <p class="price fw-bold text-primary fs-4">$14.95</p>
+          </div>
+          <div class="col-4 text-center">
+            <img class="menu-img" src="./img/menu/menu-item-3.png" height="296" alt="">
+            <h4 class="plate-name">Est Eligendi</h4>
+            <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+            <p class="price fw-bold text-primary fs-4">$8.95</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 text-center">
+            <img class="menu-img" src="./img/menu/menu-item-4.png" height="296" alt="">
+            <h4 class="plate-name">Eos Luibusdam</h4>
+            <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+            <p class="price fw-bold text-primary fs-4">$12.95</p>
+          </div>
+          <div class="col-4 text-center">
+            <img class="menu-img" src="./img/menu/menu-item-5.png" height="296" alt="">
+            <h4 class="plate-name">Eos Luibusdam</h4>
+            <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+            <p class="price fw-bold text-primary fs-4">$12.95</p>
+          </div>
+          <div class="col-4 text-center">
+            <img class="menu-img" src="./img/menu/menu-item-6.png" height="296" alt="">
+            <h4 class="plate-name">Laboriosam Direva</h4>
+            <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
+            <p class="price fw-bold text-primary fs-4">$9.95</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Amatic SC", sans-serif;
+  --nav-font: "Inter", sans-serif; -->
 
     <script type="module" src="./assets/js/main.js"></script>
   </body>
