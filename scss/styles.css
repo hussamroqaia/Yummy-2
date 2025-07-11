@@ -1,0 +1,123 @@
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Amatic SC", sans-serif;
+  --nav-font: "Inter", sans-serif;
+}
+
+.btn-book {
+  color: #fff;
+  /* border-radius: 50px; */
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.btn-book:hover {
+  background-color: #a00;
+}
+
+.light-background {
+  background-color: #f2f2f2;
+  --surface-color: #ffffff;
+}
+
+.amatic-sc-regular {
+  font-weight: 700;
+  font-size: 64px;
+  color: #37373f;
+  font-style: normal;
+}
+
+.font-amatic {
+  font-family: var(--heading-font);
+}
+
+.font-inter {
+  font-family: var(--nav-font);
+}
+
+.font-roboto {
+  font-family: var(--default-font);
+}
+
+body {
+  font-family: var(--default-font);
+}
+
+.section-title {
+  color: #212529;
+  opacity: 0.6;
+  letter-spacing: 1px;
+  padding-top: 3.75rem;
+}
+
+.section-subtitle {
+  color: #212529;
+  opacity: 0.7;
+  padding-top: 3.75rem;
+}
+
+.lorem {
+  color: #212529;
+  opacity: 0.6;
+}
+
+.fs-heading {
+  font-size: 3rem;
+}
+
+.box-a {
+  border: 4px solid #636669;
+}
+
+.pa-icon {
+  font-size: 15px;
+  color: rgba(33, 37, 41, 0.7019607843);
+}
+
+.margin-30 {
+  margin-bottom: 30px;
+}
+
+.learn-more {
+  border-radius: 50px;
+  background-color: #d53535;
+  border: none;
+  padding: 8px 40px;
+}
+
+#why-us {
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#stats {
+  background-image: url("../img/stats-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(10, 12, 22, 0.602);
+  background-blend-mode: color;
+  padding: 120px 0;
+}
+
+.menu-img {
+  padding: 0 60px;
+  margin-bottom: 15px;
+}
+
+.plate-name {
+  margin-bottom: 5px;
+}
+
+.ingredients {
+  font-size: 16px;
+  color: rgba(33, 37, 41, 0.5019607843);
+  margin-bottom: 5px;
+}
+
+.swiper {
+  height: 250px;
+}/*# sourceMappingURL=styles.css.map */

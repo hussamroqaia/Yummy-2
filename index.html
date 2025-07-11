@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Yummy</title>
 
-    <link rel="stylesheet" href="./assets/scss/main.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,112 +23,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
+    
     <link rel="stylesheet" href="./scss/main.css" />
-    <style>
-      .btn-book {
-        color: #fff;
-        /* border-radius: 50px; */
-        padding: 0.5rem 1rem;
-        font-weight: bold;
-      }
-      .btn-book:hover {
-        background-color: #a00;
-      }
-      .light-background {
-        background-color: #f2f2f2;
-        --surface-color: #ffffff;
-      }
-      .amatic-sc-regular {
-        font-weight: 700;
-        font-size: 64px;
-        color: #37373f;
-        font-style: normal;
-      }
-      .font-amatic {
-        font-family: var(--heading-font);
-      }
-      .font-inter {
-        font-family: var(--nav-font);
-      }
-      .font-roboto {
-        font-family: var(--default-font);
-      }
-      body {
-        font-family: var(--default-font);
-      }
-      .section-title {
-        color: #212529;
-        opacity: 0.6;
-        letter-spacing: 1px;
-        padding-top: 3.75rem;
-      }
-      .section-subtitle {
-        color: #212529;
-        opacity: 0.7;
 
-        padding-top: 3.75rem;
-      }
-      .lorem {
-        color: #212529;
-        opacity: 0.6;
-      }
-      .fs-heading {
-        font-size: 3rem;
-      }
-      .box-a {
-        border: 4px solid #636669;
-      }
-      .pa-icon {
-        font-size: 15px;
-        color: #212529b3;
-      }
-      .margin-30 {
-        margin-bottom: 30px;
-      }
-      .learn-more {
-        border-radius: 50px;
-        background-color: #d53535;
-        border: none;
-        padding: 8px 40px;
-      }
-
-      #why-us {
-        margin-top: 60px;
-        padding-top: 60px;
-        padding-bottom: 60px;
-      }
-      #stats {
-        background-image: url("./img/stats-bg.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: rgba(10, 12, 22, 0.602);
-        background-blend-mode: color;
-        padding: 120px 0;
-      }
-      .menu-img{
-        padding: 0 60px;
-        margin-bottom: 15px;
-      }
-      .plate-name {
-        margin-bottom: 5px;
-
-      }
-      .ingredients {
-        font-size: 16px;
-        color: #21252980;
-        margin-bottom: 5px;
-
-
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+   
   </head>
   <body>
     <header id="header" class="header d-flex align-items-center sticky-top">
@@ -149,10 +50,10 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
+                <a class="nav-link" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Events</a>
@@ -219,7 +120,7 @@
       </div>
     </section>
 
-    <section id="about ">
+    <section id="about">
       <div class="container text-center">
         <h2 class="fs-6 fw-normal section-title mt-6">About Us</h2>
         <p class="font-amatic fs-heading">
@@ -452,19 +353,34 @@
         </div>
         <div class="row">
           <div class="col-4 text-center">
-            <img class="menu-img" src="./img/menu/menu-item-1.png" height="296" alt="">
+            <img
+              class="menu-img"
+              src="./img/menu/menu-item-1.png"
+              height="296"
+              alt=""
+            />
             <h4 class="plate-name">Magnam Tiste</h4>
             <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
             <p class="price fw-bold text-primary fs-4">$5.35</p>
           </div>
           <div class="col-4 text-center">
-            <img class="menu-img" src="./img/menu/menu-item-2.png" height="296" alt="">
+            <img
+              class="menu-img"
+              src="./img/menu/menu-item-2.png"
+              height="296"
+              alt=""
+            />
             <h4 class="plate-name">Aut Luia</h4>
             <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
             <p class="price fw-bold text-primary fs-4">$14.95</p>
           </div>
           <div class="col-4 text-center">
-            <img class="menu-img" src="./img/menu/menu-item-3.png" height="296" alt="">
+            <img
+              class="menu-img"
+              src="./img/menu/menu-item-3.png"
+              height="296"
+              alt=""
+            />
             <h4 class="plate-name">Est Eligendi</h4>
             <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
             <p class="price fw-bold text-primary fs-4">$8.95</p>
@@ -472,19 +388,34 @@
         </div>
         <div class="row">
           <div class="col-4 text-center">
-            <img class="menu-img" src="./img/menu/menu-item-4.png" height="296" alt="">
+            <img
+              class="menu-img"
+              src="./img/menu/menu-item-4.png"
+              height="296"
+              alt=""
+            />
             <h4 class="plate-name">Eos Luibusdam</h4>
             <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
             <p class="price fw-bold text-primary fs-4">$12.95</p>
           </div>
           <div class="col-4 text-center">
-            <img class="menu-img" src="./img/menu/menu-item-5.png" height="296" alt="">
+            <img
+              class="menu-img"
+              src="./img/menu/menu-item-5.png"
+              height="296"
+              alt=""
+            />
             <h4 class="plate-name">Eos Luibusdam</h4>
             <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
             <p class="price fw-bold text-primary fs-4">$12.95</p>
           </div>
           <div class="col-4 text-center">
-            <img class="menu-img" src="./img/menu/menu-item-6.png" height="296" alt="">
+            <img
+              class="menu-img"
+              src="./img/menu/menu-item-6.png"
+              height="296"
+              alt=""
+            />
             <h4 class="plate-name">Laboriosam Direva</h4>
             <p class="ingredients">Lorem, deren, trataro, filede, nerada</p>
             <p class="price fw-bold text-primary fs-4">$9.95</p>
@@ -493,12 +424,89 @@
       </div>
     </section>
 
-    <!-- --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Amatic SC", sans-serif;
-  --nav-font: "Inter", sans-serif; -->
+    <section id="testimonials" class="section light-background">
+      <div class="container text-center">
+        <h2 class="fs-6 fw-normal section-title mt-6">TESTIMONIALS</h2>
+        <p class="font-amatic fs-heading">
+          <span>What Are They</span>
+          <span class="text-primary fw-medium">Saying About Us</span>
+        </p>
+      </div>
+      <div class="container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <i class="bi bi-quote"></i>
+              <span
+                >Proin iaculis purus consequat sem cure digni ssim donec
+                porttitora entum suscipit rhoncus. Accusantium quam, ultricies
+                eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                semper.</span
+              >
+              <i class="bi bi-quote quote-icon-right"></i>
+              <h3>SAUL GOODMAN</h3>
+              <h4>CEO & FOUNDER</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <img class="img-fluid rounded-pill" src="./img/testimonials/testimonials-1.jpg" alt="">
+              </div>
+              
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+       
+      </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -6,13 +6,16 @@
 // $custom-colors: (
 //   "custom-color": #900
 // );
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+// @import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
 
-// @import "./abstract/map-amends";
+
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 
-// Import Bootstrap from node_modules
+@import "./styles.scss";
+
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+     
