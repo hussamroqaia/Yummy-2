@@ -73,7 +73,7 @@ header {
   a {
     color: #4e4e59;
   }
-  
+
   .btn-book {
     color: #fff;
     font-size: 14px;
@@ -194,7 +194,6 @@ header {
     font-size: 48px;
   }
   .menu-img {
-    padding: 0 60px;
     margin-bottom: 15px;
   }
   .plate-name {
@@ -242,11 +241,18 @@ header {
               color: #ffc107;
             }
           }
-          @media (max-width: 992px) {
-            .col-lg-2 {
-              img {
-                margin-left: 148px;
-              }
+          // @media (max-width: 992px) {
+          //   .col-lg-2 {
+          //     img {
+          //       margin-left: 148px;
+          //     }
+          //   }
+          // }
+
+          .col-lg-2 {
+            img {
+              
+              padding-bottom: 30px;
             }
           }
         }

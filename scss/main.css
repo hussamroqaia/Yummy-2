@@ -193,7 +193,6 @@ header .btn-book:hover {
   font-size: 48px;
 }
 .menu .menu-img {
-  padding: 0 60px;
   margin-bottom: 15px;
 }
 .menu .plate-name {
@@ -235,10 +234,8 @@ header .btn-book:hover {
 .testimonials .swiper .swiper-wrapper .slide .row .col-lg-6 .star-color {
   color: #ffc107;
 }
-@media (max-width: 992px) {
-  .testimonials .swiper .swiper-wrapper .slide .row .col-lg-2 img {
-    margin-left: 148px;
-  }
+.testimonials .swiper .swiper-wrapper .slide .row .col-lg-2 img {
+  padding-bottom: 30px;
 }
 .testimonials .swiper .swiper-pagination {
   margin-bottom: -14px !important;
