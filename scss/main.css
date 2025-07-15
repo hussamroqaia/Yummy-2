@@ -85,6 +85,14 @@ textarea::placeholder {
     transform: translateY(-15px);
   }
 }
+.custom-marker {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 header {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
