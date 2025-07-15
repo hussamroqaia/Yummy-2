@@ -75,6 +75,14 @@ textarea::placeholder {
   border-bottom: 2px solid red; /* Bootstrap primary or your desired color */
 }
 
+@keyframes up-and-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
 header {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
@@ -95,6 +103,9 @@ header .btn-book:hover {
   background-color: #a00;
 }
 
+.hero .animate-img {
+  animation: up-and-down 2s ease-in-out infinite alternate-reverse both;
+}
 .hero h1 {
   font-weight: 700;
   font-size: 64px;
@@ -204,7 +215,8 @@ header .btn-book:hover {
 
 .testimonials .swiper .swiper-wrapper .slide .row .col-lg-6 {
   border-left: 3px solid #ce1212;
-  padding-left: 20px;
+  padding: 10px 40px;
+  margin: 15px 0px 15px 60px;
 }
 .testimonials .swiper .swiper-wrapper .slide .row .col-lg-6 .quote-icon-start {
   color: #e08282;
@@ -387,14 +399,20 @@ header .btn-book:hover {
 }
 
 @media (width < 1200px) {
-  .gallery .swiper-wrapper .swiper-slide {
+  .gallery .swiper .swiper-wrapper .swiper-slide {
     width: 50% !important;
   }
 }
 @media (width < 768px) {
-  .gallery .swiper-wrapper .swiper-slide {
+  .gallery .swiper .swiper-wrapper .swiper-slide {
     width: 100% !important;
   }
+}
+.gallery .swiper .swiper-slide .d-flex {
+  height: 550px;
+}
+.gallery .swiper .swiper-pagination {
+  margin-bottom: -10px;
 }
 
 .contact .contact-card {
